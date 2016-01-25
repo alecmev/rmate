@@ -13,7 +13,8 @@ chmod +x /usr/local/bin/rmate
 ```
 
 Just in case, `/usr` isn't writable in CoreOS, so use `/opt/bin/rmate` instead,
-and since mention CoreOS specifics, might as well throw in a cloud config:
+and since I mention CoreOS specifics, might as well throw in a cloud config,
+right?
 
 ```yml
 coreos:
