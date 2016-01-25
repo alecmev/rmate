@@ -1,0 +1,5 @@
+#!/bin/bash
+
+filepath=$(readlink -m $1); shift
+docker run --rm --net=host -v $(dirname $filepath):/wd test \
+  -w $@ "/wd/$(basename $filepath)" &
