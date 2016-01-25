@@ -1,5 +1,8 @@
 # Dockerized [rmate](https://github.com/aurora/rmate)
 
+[![Docker Repository on Quay](https://quay.io/repository/jeremejevs/rmate/status
+"Docker Repository on Quay")](https://quay.io/repository/jeremejevs/rmate)
+
 Useful for when extra runtimes, like Ruby or Python, are undesired, and even the
 bash version doesn't work, like on CoreOS (since its bash has been compiled
 without net redirections) or in some non-bash distro (in which case you'll have
