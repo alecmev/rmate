@@ -35,6 +35,9 @@ coreos:
         ExecStart=/usr/bin/chmod +x /opt/bin/rmate
 ```
 
+Feel free to replace `/opt/bin/rmate` with `/opt/bin/rsub`, if you prefer that.
+I know I do.
+
 ### Usage
 
 ```bash
