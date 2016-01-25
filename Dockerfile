@@ -1,11 +1,9 @@
-FROM debian
+FROM gliderlabs/alpine
 
+RUN apk add --no-cache bash
 RUN \
-  apt-get update && \
-  apt-get install wget -y && \
-  wget -O /usr/local/bin/rmate http://raw.githubusercontent.com/aurora/rmate/master/rmate && \
-  chmod +x /usr/local/bin/rmate && \
-  apt-get purge --auto-remove wget -y && \
-  apt-get clean
+  wget -O /usr/local/bin/rmate \
+    http://raw.githubusercontent.com/aurora/rmate/master/rmate && \
+  chmod +x /usr/local/bin/rmate
 
 ENTRYPOINT ["/usr/local/bin/rmate"]
