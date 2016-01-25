@@ -44,5 +44,3 @@ rmate --line 42 qux # won't work, file path should come first
 rmate quux --wait # --wait has no effect
 rmate quuux --no-wait # don't do this
 ```
-
-Disregard the jibber-jabber it prints when launching.
