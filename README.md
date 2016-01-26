@@ -46,6 +46,5 @@ I know I do.
 rmate foo
 rmate bar --name baz
 rmate --line 42 qux # won't work, file path should come first
-rmate quux --wait # --wait has no effect
-rmate quuux --no-wait # don't do this
+rmate quux --wait # --[no-]wait has no effect
 ```
