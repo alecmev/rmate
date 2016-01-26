@@ -8,6 +8,9 @@ bash version doesn't work, like on CoreOS (since its bash has been compiled
 without net redirections) or in some non-bash distro (in which case you'll have
 to adjust the included rmate script by yourself).
 
+And it's just **8.246 MB**, thanks to
+[`gliderlabs/alpine`](https://github.com/gliderlabs/docker-alpine).
+
 ### Setup
 
 ```bash
@@ -27,7 +30,6 @@ coreos:
       content: |
         [Unit]
         Description=Download and install rmate
-
         [Service]
         Type=oneshot
         ExecStart=/usr/bin/mkdir -p /opt/bin
